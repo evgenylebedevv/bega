@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a56a2fe7-8273-424a-a1c9-7b261733f9a7" name="bega_jino.ru" url="http://evgenylebedevv.myjino.ru">
+        <fileTransfer accessType="FTPS" host="evgenylebedevv.myjino.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
