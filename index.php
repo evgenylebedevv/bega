@@ -1,11 +1,9 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 ?>
 
     <!-- main-area -->
     <main>
-
         <!-- slider-area -->
         <section class="slider-area slider-bg">
             <div class="container">
@@ -29,37 +27,37 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                 <div class="row brand-active">
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo01.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo01.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo02.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo02.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo03.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo03.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo04.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo04.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo05.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo05.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo06.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo06.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-2">
                         <div class="brand-item">
-                            <img src="/bitrix/templates/.default/img/brand/brand_logo03.png" alt="">
+                            <img src="/local/templates/.default/img/brand/brand_logo03.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -86,7 +84,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                             <div class="latest-games-active owl-carousel">
                                 <div class="latest-games-items mb-30">
                                     <div class="latest-games-thumb">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/product/latest_games_thumb01.jpg" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/product/latest_games_thumb01.jpg" alt=""></a>
                                     </div>
                                     <div class="latest-games-content">
                                         <div class="lg-tag">
@@ -98,7 +96,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                                 <div class="latest-games-items mb-30">
                                     <div class="latest-games-thumb">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/product/latest_games_thumb02.jpg" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/product/latest_games_thumb02.jpg" alt=""></a>
                                     </div>
                                     <div class="latest-games-content">
                                         <div class="lg-tag">
@@ -110,7 +108,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                                 <div class="latest-games-items mb-30">
                                     <div class="latest-games-thumb">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/product/latest_games_thumb03.jpg" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/product/latest_games_thumb03.jpg" alt=""></a>
                                     </div>
                                     <div class="latest-games-content">
                                         <div class="lg-tag">
@@ -122,7 +120,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                                 <div class="latest-games-items mb-30">
                                     <div class="latest-games-thumb">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/product/latest_games_thumb01.jpg" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/product/latest_games_thumb01.jpg" alt=""></a>
                                     </div>
                                     <div class="latest-games-content">
                                         <div class="lg-tag">
@@ -140,32 +138,16 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
             <!-- latest-games-area-end -->
 
             <!-- about-us-area -->
-            <section class="about-us-area pt-90 pb-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 order-0 order-lg-2">
-                            <div class="about-img">
-                                <img src="/bitrix/templates/.default/img/images/about_us_img.jpg" alt="">
-                                <a href="https://www.youtube.com/watch?v=_LTiEXMc5J0" class="popup-video"><img src="/bitrix/templates/.default/img/icon/play_btn.png"  alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="section-title title-style-two mb-45">
-                                <span>about story</span>
-                                <h2>Noob Dia <span>Paradiso</span> Tournament</h2>
-                            </div>
-                            <div class="about-content">
-                                <p>Find technology or people for digital projects in public sector and Find an individual specialist develo researcher.</p>
-                                <p>Consectur adipiscing elit, sed do eiusmod tempor incididunt labore dolore mana aliqua. Unimd minim venam quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip commodo cpsam.</p>
-                                <div class="about-btn">
-                                    <a href="#" class="btn">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "EDIT_TEMPLATE" => "",
+                    "PATH" => "/include/about-us-area.php"
+                )
+            );?>
             <!-- about-us-area-end -->
 
         </div>
@@ -188,7 +170,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                             <div class="coming-match-team">
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo01.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo01.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">Bluster 8</a>
@@ -199,7 +181,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo02.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo02.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">kill bill 7</a>
@@ -221,7 +203,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                             </div>
                             <div class="coming-match-time">
-                                <div class="coming-time" data-countdown="2021/3/30"></div>
+                                <div class="coming-time" data-countdown="2025/3/30"></div>
                             </div>
                         </div>
                     </div>
@@ -230,18 +212,18 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                             <div class="coming-match-team">
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo03.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo03.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">Bluster 8</a>
                                     </div>
                                 </div>
                                 <div class="coming-match-status">
-                                    <img src="/bitrix/templates/.default/img/team/match_vs.png" alt="">
+                                    <img src="/local/templates/.default/img/team/match_vs.png" alt="">
                                 </div>
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo04.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo04.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">The Champ</a>
@@ -263,7 +245,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                             </div>
                             <div class="coming-match-time">
-                                <div class="coming-time" data-countdown="2021/3/30"></div>
+                                <div class="coming-time" data-countdown="2025/5/25"></div>
                             </div>
                         </div>
                     </div>
@@ -272,18 +254,18 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                             <div class="coming-match-team">
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo05.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo05.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">Warrior</a>
                                     </div>
                                 </div>
                                 <div class="coming-match-status">
-                                    <img src="/bitrix/templates/.default/img/team/match_vs.png" alt="">
+                                    <img src="/local/templates/.default/img/team/match_vs.png" alt="">
                                 </div>
                                 <div class="match-team-info">
                                     <div class="match-team-logo">
-                                        <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo06.png" alt=""></a>
+                                        <a href="#"><img src="/local/templates/.default/img/team/team_logo06.png" alt=""></a>
                                     </div>
                                     <div class="match-team-name">
                                         <a href="#">kill bill 7</a>
@@ -305,7 +287,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 </div>
                             </div>
                             <div class="coming-match-time">
-                                <div class="coming-time" data-countdown="2021/3/30"></div>
+                                <div class="coming-time" data-countdown="2025/2/15"></div>
                             </div>
                         </div>
                     </div>
@@ -336,15 +318,15 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                                 <div class="tournament-schedule-item">
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo01.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo01.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                     <div class="coming-match-status">
-                                                        <img src="/bitrix/templates/.default/img/team/match_vs.png" alt="">
+                                                        <img src="/local/templates/.default/img/team/match_vs.png" alt="">
                                                     </div>
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo02.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo02.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -368,15 +350,15 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                                 <div class="tournament-schedule-item">
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo03.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo03.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                     <div class="coming-match-status">
-                                                        <img src="/bitrix/templates/.default/img/team/match_vs.png" alt="">
+                                                        <img src="/local/templates/.default/img/team/match_vs.png" alt="">
                                                     </div>
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo04.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo04.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -400,15 +382,15 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                                 <div class="tournament-schedule-item">
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo05.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo05.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                     <div class="coming-match-status">
-                                                        <img src="/bitrix/templates/.default/img/team/match_vs.png" alt="">
+                                                        <img src="/local/templates/.default/img/team/match_vs.png" alt="">
                                                     </div>
                                                     <div class="match-team-info">
                                                         <div class="match-team-logo">
-                                                            <a href="#"><img src="/bitrix/templates/.default/img/team/team_logo06.png" alt=""></a>
+                                                            <a href="#"><img src="/local/templates/.default/img/team/team_logo06.png" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -436,162 +418,16 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
         <!-- game-manage-area-end -->
 
         <!-- features-area -->
-        <section class="features-area features-bg pt-120 pb-70">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="section-title title-style-two text-center mb-60">
-                            <span>what we give players</span>
-                            <h2>Why Choose Us <span>Geco</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a href="#">t-shirt</a></div>
-                                <h4>Gamine slim elegant young woman perceived</h4>
-                                <p>Consecur adipcig eiusod tempor the inci did dolore mana is aliqsua Unimd minim thats tempor dolore adipcig</p>
-                            </div>
-                            <div class="features-list-wrap">
-                                <ul>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb01.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">zombie</a></div>
-                                            <h6><a href="#">Who hangs around the streets</a></h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb02.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">shooter</a></div>
-                                            <h6><a href="#">Design compose copratin</a></h6>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a href="#">Cloud</a></div>
-                                <h4>Leading Games Retailer with Great Deals Video</h4>
-                                <p>Consecur adipcig eiusod tempor the inci did dolore mana is aliqsua Unimd minim thats tempor dolore adipcig</p>
-                            </div>
-                            <div class="features-list-wrap">
-                                <ul>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb03.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">zombie</a></div>
-                                            <h6><a href="#">Design compose copratin</a></h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb04.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">shooter</a></div>
-                                            <h6><a href="#">Who hangs around the streets</a></h6>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="features-item mb-30">
-                            <div class="features-head mb-35">
-                                <div class="product-tag"><a href="#">islands</a></div>
-                                <h4>The word gamine is a French word, the feminine</h4>
-                                <p>Consecur adipcig eiusod tempor the inci did dolore mana is aliqsua Unimd minim thats tempor dolore
-                                    adipcig</p>
-                            </div>
-                            <div class="features-list-wrap">
-                                <ul>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb05.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">zombie</a></div>
-                                            <h6><a href="#">Who hangs around the streets</a></h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="features-list-img">
-                                            <img src="/bitrix/templates/.default/img/images/features_thumb06.jpg" alt="">
-                                        </div>
-                                        <div class="features-list-content">
-                                            <div class="product-tag"><a href="#">shooter</a></div>
-                                            <h6><a href="#">Design compose copratin</a></h6>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fact-area pt-90">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img src="/bitrix/templates/.default/img/icon/fact_icon01.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="245">00</span></h2>
-                                    <span>Amazing Feature</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img src="/bitrix/templates/.default/img/icon/fact_icon02.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="1245">00</span></h2>
-                                    <span>Amazing Feature</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img src="/bitrix/templates/.default/img/icon/fact_icon03.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="78">00</span>K</h2>
-                                    <span>Amazing Feature</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="fact-item">
-                                <div class="fact-icon">
-                                    <img src="/bitrix/templates/.default/img/icon/fact_icon04.png" alt="">
-                                </div>
-                                <div class="fact-content">
-                                    <h2><span class="odometer" data-count="12">00</span></h2>
-                                    <span>Amazing Feature</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+                "AREA_FILE_SHOW" => "file",
+                "AREA_FILE_SUFFIX" => "inc",
+                "EDIT_TEMPLATE" => "",
+                "PATH" => "/include/features-area.php"
+            )
+        );?>
         <!-- features-area-end -->
 
         <!-- area-bg-two -->
@@ -612,7 +448,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                         <div class="col-xl-3">
                             <div class="shop-item">
                                 <div class="product-thumb">
-                                    <a href="#"><img src="/bitrix/templates/.default/img/product/product_img01.jpg" alt=""></a>
+                                    <a href="#"><img src="/local/templates/.default/img/product/product_img01.jpg" alt=""></a>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-tag"><a href="#">t-shirt</a></div>
@@ -631,7 +467,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                         <div class="col-xl-3">
                             <div class="shop-item">
                                 <div class="product-thumb">
-                                    <a href="#"><img src="/bitrix/templates/.default/img/product/product_img02.jpg" alt=""></a>
+                                    <a href="#"><img src="/local/templates/.default/img/product/product_img02.jpg" alt=""></a>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-tag"><a href="#">x-box</a></div>
@@ -650,7 +486,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                         <div class="col-xl-3">
                             <div class="shop-item">
                                 <div class="product-thumb">
-                                    <a href="#"><img src="/bitrix/templates/.default/img/product/product_img03.jpg" alt=""></a>
+                                    <a href="#"><img src="/local/templates/.default/img/product/product_img03.jpg" alt=""></a>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-tag"><a href="#">graphics</a></div>
@@ -669,7 +505,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                         <div class="col-xl-3">
                             <div class="shop-item">
                                 <div class="product-thumb">
-                                    <a href="#"><img src="/bitrix/templates/.default/img/product/product_img04.jpg" alt=""></a>
+                                    <a href="#"><img src="/local/templates/.default/img/product/product_img04.jpg" alt=""></a>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-tag"><a href="#">VR-Box</a></div>
@@ -688,7 +524,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                         <div class="col-xl-3">
                             <div class="shop-item">
                                 <div class="product-thumb">
-                                    <a href="#"><img src="/bitrix/templates/.default/img/product/product_img04.jpg" alt=""></a>
+                                    <a href="#"><img src="/local/templates/.default/img/product/product_img04.jpg" alt=""></a>
                                 </div>
                                 <div class="product-content">
                                     <div class="product-tag"><a href="#">VR-Box</a></div>
@@ -723,7 +559,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                 <div class="blog-post-wrap">
                                     <div class="blog-post-item blog-style-one">
                                         <div class="blog-thumb">
-                                            <a href="#"><img src="/bitrix/templates/.default/img/blog/blog_thumb01.jpg" alt=""></a>
+                                            <a href="#"><img src="/local/templates/.default/img/blog/blog_thumb01.jpg" alt=""></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <h5><a href="#">Reality can include entertain</a></h5>
@@ -739,7 +575,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                     </div>
                                     <div class="blog-post-item blog-style-one">
                                         <div class="blog-thumb">
-                                            <a href="#"><img src="/bitrix/templates/.default/img/blog/blog_thumb02.jpg" alt=""></a>
+                                            <a href="#"><img src="/local/templates/.default/img/blog/blog_thumb02.jpg" alt=""></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <h5><a href="#">Simulated experience simila</a></h5>
@@ -755,7 +591,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                     </div>
                                     <div class="blog-post-item blog-style-one">
                                         <div class="blog-thumb">
-                                            <a href="#"><img src="/bitrix/templates/.default/img/blog/blog_thumb03.jpg" alt=""></a>
+                                            <a href="#"><img src="/local/templates/.default/img/blog/blog_thumb03.jpg" alt=""></a>
                                         </div>
                                         <div class="blog-post-content">
                                             <h5><a href="#">High Performance Server</a></h5>
@@ -796,7 +632,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                         </div>
                                         <div class="testimonial-avatar">
                                             <div class="testi-avtar-img">
-                                                <img src="/bitrix/templates/.default/img/images/testi_avatar.png" alt="">
+                                                <img src="/local/templates/.default/img/images/testi_avatar.png" alt="">
                                             </div>
                                             <div class="testi-avatar-info">
                                                 <h6>Mark Alexander</h6>
@@ -820,7 +656,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                         </div>
                                         <div class="testimonial-avatar">
                                             <div class="testi-avtar-img">
-                                                <img src="/bitrix/templates/.default/img/images/testi_avatar.png" alt="">
+                                                <img src="/local/templates/.default/img/images/testi_avatar.png" alt="">
                                             </div>
                                             <div class="testi-avatar-info">
                                                 <h6>Mark Alexander</h6>
@@ -829,7 +665,7 @@ $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
                                         </div>
                                     </div>
                                 </div>
-                                <div class="testi-quote"><img src="/bitrix/templates/.default/img/icon/testi_quote.png" alt=""></div>
+                                <div class="testi-quote"><img src="/local/templates/.default/img/icon/testi_quote.png" alt=""></div>
                             </div>
                         </div>
                     </div>

@@ -84,3 +84,26 @@ var Fader = {
     target.style.opacity = alpha/100;
   }
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('first').addEventListener('click', function() {
+
+// Затухание (исчезновение) элемента
+    Fader.fadeOutWithId('third', 1, function() {
+      // Код, который выполнится после завершения затухания
+    });
+
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('second').addEventListener('click', function() {
+
+    // Появление элемента
+    Fader.fadeInWithId('third', 1, function() {
+      // Код, который выполнится после завершения появления
+    });
+
+  });
+});
+

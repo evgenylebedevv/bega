@@ -45,13 +45,13 @@
 
 @font-face {
 	font-family: 'Rubik-SemiBold';
-	src: url(../../../../local/templates/.default/fonts/Rubik-SemiBold.ttf) format('ttf'), url('/local/templates/.default/fonts/Rubik-Medium.woff') format('woff');
+	src: url(../fonts/Rubik-SemiBold.ttf) format('ttf'), url('/local/templates/.default/fonts/Rubik-Medium.woff') format('woff');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'Rubik-Medium';
-	src: url(../../../../local/templates/.default/fonts/Rubik-Medium.ttf) format('ttf'), url('/local/templates/.default/fonts/Rubik-Medium.woff') format('woff');
+	src: url(../fonts/Rubik-Medium.ttf) format('ttf'), url('/local/templates/.default/fonts/Rubik-Medium.woff') format('woff');
 	font-weight: 600;
 }
 
@@ -247,7 +247,7 @@ label {
 	position: absolute;
 	left: 0;
 	bottom: -5px;
-	background-image: url(../../../../local/templates/.default/img/images/btn_overlay.png);
+	background-image: url(../img/images/btn_overlay.png);
 	width: 100%;
 	height: 55px;
 	background-repeat: no-repeat;
@@ -381,7 +381,7 @@ label {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url(../../../../local/templates/.default/img/images/offer_count_bg.png);
+	background-image: url(../img/images/offer_count_bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -499,7 +499,7 @@ ul.minicart .cart-content a:hover,
 	color: #1c1121;
 }
 .main-header {
-	background-image: url(../../../../local/templates/.default/img/bg/header_bg.jpg);
+	background-image: url(../img/bg/header_bg.jpg);
 	background-position: right center;
 	background-size: cover;
 	position: relative;
@@ -723,7 +723,7 @@ ul.minicart .cart-price .new {
 .menu-style-two {
 	padding: 28px 30px;
 	border-radius: 0 0 14px 14px;
-	background-image: url(../../../../local/templates/.default/img/bg/header_bg.jpg);
+	background-image: url(../img/bg/header_bg.jpg);
 	background-position: right center;
 	background-size: cover;
 	position: relative;
@@ -813,7 +813,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 100%;
     z-index: 99;
-    background-image: url(../../../../local/templates/.default/img/bg/header_bg.jpg);
+    background-image: url(../img/bg/header_bg.jpg);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -905,17 +905,17 @@ ul.minicart .cart-price .new {
 
 /* 4. Breadcrumb */
 .breadcrumb-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/breadcrumb_bg.jpg);
+	background-image: url(../img/bg/breadcrumb_bg.jpg);
 	padding-top: 275px;
 	padding-bottom: 170px;
 	background-position: center;
 	background-size: cover;
 }
 .s-breadcrumb-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/breadcrumb_bg02.jpg);
+	background-image: url(../img/bg/breadcrumb_bg02.jpg);
 }
 .third-breadcrumb-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/breadcrumb_bg03.jpg);
+	background-image: url(../img/bg/breadcrumb_bg03.jpg);
 }
 .breadcrumb-content h2 {
 	font-size: 70px;
@@ -995,7 +995,7 @@ ul.minicart .cart-price .new {
 
 /* 5. Slider */
 .slider-bg {
-	background-image: url(../../../../local/templates/.default/img/slider/slider_bg.jpg);
+	background-image: url(../img/slider/slider_bg.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 260px 0;
@@ -1056,7 +1056,7 @@ ul.minicart .cart-price .new {
 	line-height: 1.6;
 }
 .slider-style-two {
-	background-image: url(../../../../local/templates/.default/img/slider/slider_bg02.jpg);
+	background-image: url(../img/slider/slider_bg02.jpg);
 	padding: 290px 0 190px;
 	position: relative;
 	z-index: 1;
@@ -1144,7 +1144,7 @@ ul.minicart .cart-price .new {
 
 /* 6. Brand */
 .brand-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/brand_bg.jpg);
+	background-image: url(../img/bg/brand_bg.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 60px 0;
@@ -1166,12 +1166,12 @@ ul.minicart .cart-price .new {
 
 /* area-bg */
 .area-bg-one {
-	background-image: url(../../../../local/templates/.default/img/bg/area_bg01.jpg);
+	background-image: url(../img/bg/area_bg01.jpg);
 	background-position: center;
 	background-size: cover;
 }
 .area-bg-two {
-	background-image: url(../../../../local/templates/.default/img/bg/area_bg02.jpg);
+	background-image: url(../img/bg/area_bg02.jpg);
 	background-position: center;
 	background-size: cover;
 	padding-bottom: 55px;
@@ -1319,13 +1319,13 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-image: url(../../../../local/templates/.default/img/images/title_bar.png);
+	background-image: url(../img/images/title_bar.png);
 	width: 270px;
 	height: 13px;
 	background-repeat: no-repeat;
 }
 .title-style-three::before {
-	background-image: url(../../../../local/templates/.default/img/images/title_bar02.png);
+	background-image: url(../img/images/title_bar02.png);
 }
 .title-style-three h2 {
 	color: #1c1121;
@@ -1407,7 +1407,7 @@ ul.minicart .cart-price .new {
 	z-index: 2;
 }
 .released-game-item-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/released_slide_bg.jpg);
+	background-image: url(../img/bg/released_slide_bg.jpg);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1450,7 +1450,7 @@ ul.minicart .cart-price .new {
 }
 .released-game-content h4::before {
 	content: "";
-	background-image: url(../../../../local/templates/.default/img/images/released_game_brush.png);
+	background-image: url(../img/images/released_game_brush.png);
 	position: absolute;
 	right: -50px;
 	top: 0;
@@ -1546,7 +1546,7 @@ ul.minicart .cart-price .new {
 	margin: 0 auto;
 }
 .game-mange-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/game_manage_bg.jpg);
+	background-image: url(../img/bg/game_manage_bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1740,7 +1740,7 @@ ul.minicart .cart-price .new {
 	visibility: visible;
 }
 .featured-game-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/featured_game_bg.png);
+	background-image: url(../img/bg/featured_game_bg.png);
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -1753,7 +1753,7 @@ ul.minicart .cart-price .new {
 
 /* 12. Cta */
 .cta-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/cta_bg.jpg);
+	background-image: url(../img/bg/cta_bg.jpg);
 	padding: 120px 0;
 	background-position: center;
 	background-size: cover;
@@ -1872,7 +1872,7 @@ ul.minicart .cart-price .new {
 	color: #1c1121;
 }
 .latest-match-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/latest_match_bg.jpg);
+	background-image: url(../img/bg/latest_match_bg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -1964,7 +1964,7 @@ ul.minicart .cart-price .new {
 
 /* 14. Just-gamers */
 .just-gamers-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/just_gamer_bg.jpg);
+	background-image: url(../img/bg/just_gamer_bg.jpg);
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -1976,7 +1976,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	right: 0;
-	background-image: url(../../../../local/templates/.default/img/images/gamers_bg_conve01.png);
+	background-image: url(../img/images/gamers_bg_conve01.png);
 	width: 467px;
 	height: 169px;
 	margin: 0 auto;
@@ -1989,7 +1989,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	right: 0;
-	background-image: url(../../../../local/templates/.default/img/images/gamers_bg_conve02.png);
+	background-image: url(../img/images/gamers_bg_conve02.png);
 	width: 420px;
 	height: 152px;
 	margin: 0 auto;
@@ -2004,7 +2004,7 @@ ul.minicart .cart-price .new {
 	color: #cbcbcb;
 }
 .title-style-three.white-title::before {
-	background-image: url(../../../../local/templates/.default/img/images/title_bar03.png);
+	background-image: url(../img/images/title_bar03.png);
 }
 .just-gamers-list ul li {
 	margin-bottom: 40px;
@@ -2013,7 +2013,7 @@ ul.minicart .cart-price .new {
 }
 .just-gamers-list-icon {
 	float: left;
-	background-image: url(../../../../local/templates/.default/img/bg/gamer_list_icon_bg.jpg);
+	background-image: url(../img/bg/gamer_list_icon_bg.jpg);
 	width: 97px;
 	height: 97px;
 	text-align: center;
@@ -2067,7 +2067,7 @@ ul.minicart .cart-price .new {
 
 /* 15. Features */
 .features-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/features_bg.jpg);
+	background-image: url(../img/bg/features_bg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -2402,7 +2402,7 @@ ul.minicart .cart-price .new {
 	transform: translateY(0px);
 }
 .upcoming-games-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/upc_game_bg.jpg);
+	background-image: url(../img/bg/upc_game_bg.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -3626,7 +3626,7 @@ ul.minicart .cart-price .new {
 
 /* 26. Footer */
 .footer-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/footer_bg.jpg);
+	background-image: url(../img/bg/footer_bg.jpg);
 	background-color: #f9f9f9;
 	background-position: top center;
 	background-size: cover;
@@ -3760,7 +3760,7 @@ ul.minicart .cart-price .new {
 	font-weight: 500;
 }
 .s-footer-bg {
-	background-image: url(../../../../local/templates/.default/img/bg/s_footer_bg.jpg);
+	background-image: url(../img/bg/s_footer_bg.jpg);
 }
 .s-footer-bg .fw-title h5 {
 	font-size: 16px;

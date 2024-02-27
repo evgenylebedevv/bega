@@ -16,11 +16,15 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
                         <div class="col-xl-8 col-lg-6">
                             <div class="breadcrumb-content text-center text-lg-left pl-80">
                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="../light-theme/index.php">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">game single</li>
-                                    </ol>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:breadcrumb",
+                                        "breadcrumbs",
+                                        Array(
+                                            "PATH" => "",
+                                            "SITE_ID" => "s1",
+                                            "START_FROM" => "0"
+                                        )
+                                    );?>
                                 </nav>
                                 <h2>PGS AMERICAS <span>2020</span></h2>
                                 <div class="game-overview-status">

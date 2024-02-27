@@ -14,7 +14,7 @@ foreach ($arResult as $arItem): ?>
     <? if ($arItem["IS_PARENT"]): ?> <!--Если родитель-->
 
         <? if ($arItem["DEPTH_LEVEL"] == 1): ?> <!--Если родитель и 1 ур.-->
-            <li class="<?if ($arItem["SELECTED"]):?>show<?else:?>  <?endif?>">
+            <li class="<?if ($arItem["SELECTED"]):?>show<?endif?>">
                 <a href="<?= $arItem["LINK"] ?>">
                     <?= $arItem["TEXT"] ?>
                 </a>
@@ -33,7 +33,7 @@ foreach ($arResult as $arItem): ?>
         <? if ($arItem["PERMISSION"] > "D"):?> <!-- Если не родитель и есть права -->
 
             <? if ($arItem["DEPTH_LEVEL"] == 1):?> <!-- Если не родитель и 1 ур. -->
-                <li>
+                <li class="<?if ($arItem["SELECTED"]):?>show<?endif?>">
                     <a href="<?= $arItem["LINK"] ?>">
                         <?= $arItem["TEXT"] ?>
                     </a>

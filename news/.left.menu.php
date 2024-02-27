@@ -2,14 +2,14 @@
 $aMenuLinks = Array(
 	Array(
 		"Страница новостей",
-		"/local/news/news-page/",
+		"/news/news-page/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Новости подробно",
-		"/local/news/news-details/",
+		"/news/news-details/",
 		Array(), 
 		Array(), 
 		"" 

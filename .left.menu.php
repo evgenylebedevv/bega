@@ -1,15 +1,15 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Ожидаемые игры",
-		"/local/games/upcoming-games/",
+		"Светлая тема",
+		"/light-theme/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Одиночные игры",
-		"/local/games/game-single/",
+		"Темная тема",
+		"/",
 		Array(), 
 		Array(), 
 		"" 

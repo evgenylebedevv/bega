@@ -10,10 +10,15 @@
                             <div class="breadcrumb-content text-center">
                                 <h2>Blog <span>Details</span></h2>
                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="../../light-theme/index.php">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
-                                    </ol>
+                                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:breadcrumb",
+                                        "breadcrumbs",
+                                        Array(
+                                            "PATH" => "",
+                                            "SITE_ID" => "s1",
+                                            "START_FROM" => "0"
+                                        )
+                                    );?>
                                 </nav>
                             </div>
                         </div>

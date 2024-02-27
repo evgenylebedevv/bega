@@ -145,7 +145,7 @@
 	background-image: none;
 }
 .transparent-header {
-	background-image: url(../../../../local/templates/.default/img/bg/header_bg.jpg);
+	background-image: url(../img/bg/header_bg.jpg);
 }
 .menu-style-two .navbar-wrap ul li a {
 	padding: 15px 20px;

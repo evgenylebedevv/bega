@@ -33,22 +33,18 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="footer-widget mb-50">
-                        <div class="footer-logo mb-35">
-                            <a href="index.html"><img src="/local/templates/.default/img/logo/logo.png" alt=""></a>
-                        </div>
-                        <div class="footer-text">
-                            <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
-                            <div class="footer-contact">
-                                <ul>
-                                    <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
-                                        lan West new queens</li>
-                                    <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
-                                    <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/footer-widget-mb5.php"
+                        )
+                    );?>
+
                 </div>
                 <div class="col-xl-2 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-50">
@@ -118,7 +114,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright-text">
-                        <p>Copyright © 2020 <a href="#">Bega</a> All Rights Reserved.</p>
+                        <p>Dev by <a href="https://siteprovider.ru">SiteProvider.ru </a><?echo date('Y');?></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 d-none d-md-block">
@@ -129,11 +125,9 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
             </div>
         </div>
     </div>
+
 </footer>
 <!-- footer-area-end -->
-
-
-
 
 
 <!-- JS here -->
@@ -156,5 +150,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 <script src="/local/templates/.default/js/jquery.magnific-popup.min.js"></script>
 <script src="/local/templates/.default/js/plugins.js"></script>
 <script src="/local/templates/.default/js/main.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/local/templates/.default/js/fader.js"></script>
 </body>
 </html>

@@ -30,6 +30,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     <link rel="stylesheet" href="/local/templates/.default/css/default.css">
     <link rel="stylesheet" href="/local/templates/.default/css/style.css">
     <link rel="stylesheet" href="/local/templates/.default/css/responsive.css">
+
     <?$APPLICATION->ShowHead();?>
 </head>
 <body>
@@ -54,7 +55,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                 <div class="col-lg-6 d-none d-lg-block">
                     <div class="header-top-offer">
                         <p>Exclusive Black Friday ! Offer</p>
-                        <span class="coming-time" data-countdown="2020/6/20"></span>
+                        <span class="coming-time" data-countdown="2024/6/20"></span>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -93,34 +94,25 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                     <div class="main-menu">
                         <nav>
                             <div class="logo">
-                                <a href="index-2.html"><img src="/local/templates/.default/img/logo/logo.png" alt="Logo"></a>
+                                <a href="/"><img src="/local/templates/.default/img/logo/logo.png" alt="Logo"></a>
                             </div>
                             <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
-                                <ul>
-                                    <li class="show"><a href="#"><?=GetMessage("HOME");?></a>
-                                        <ul class="submenu">
-                                            <li><a href="index-2.html"><?=GetMessage("HOME_LIGHT");?></a></li>
-                                            <li class="active"><a href="index.html"><?=GetMessage("HOME_DARK");?></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"><?=GetMessage("GAMES");?></a>
-                                        <ul class="submenu">
-                                            <li><a href="about-us.html"><?=GetMessage("ABOUT_STORY");?></a></li>
-                                            <li><a href="upcoming-games.html"><?=GetMessage("UPCOMING_GAMES");?></a></li>
-                                            <li><a href="game-single.html"><?=GetMessage("GAME_SINGLE");?></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="game-overview.html"><?=GetMessage("OVERVIEW");?></a></li>
-                                    <li><a href="community.html"><?=GetMessage("COMMUNITY");?></a></li>
-                                    <li><a href="shop.html"><?=GetMessage("STORE");?></a></li>
-                                    <li><a href="#"><?=GetMessage("BLOG");?></a></a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html"><?=GetMessage("NEWS_PAGE");?></a></li>
-                                            <li><a href="blog-details.html"><?=GetMessage("NEWS_DETAILS");?></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html"><?=GetMessage("CONTACT");?></a></li>
-                                </ul>
+                                <?$APPLICATION->IncludeComponent(
+                                    "bitrix:menu",
+                                    "top_main_menu",
+                                    Array(
+                                        "ALLOW_MULTI_SELECT" => "N",
+                                        "CHILD_MENU_TYPE" => "left",
+                                        "DELAY" => "N",
+                                        "MAX_LEVEL" => "2",
+                                        "MENU_CACHE_GET_VARS" => array(0=>"",),
+                                        "MENU_CACHE_TIME" => "3600",
+                                        "MENU_CACHE_TYPE" => "N",
+                                        "MENU_CACHE_USE_GROUPS" => "Y",
+                                        "ROOT_MENU_TYPE" => "top",
+                                        "USE_EXT" => "N"
+                                    )
+                                );?>
                             </div>
                             <div class="header-action">
                                 <ul>
