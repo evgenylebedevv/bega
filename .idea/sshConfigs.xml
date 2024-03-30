@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="evgenylebedevv.myjino.ru" id="9ecec092-bd7a-4183-ae3b-ef8fe3d7eeae" port="2222" nameFormat="DESCRIPTIVE" username="evgenylebedevv" useOpenSSHConfig="true" />
-    </configs>
-  </component>
-</project>
