@@ -1,20 +1,74 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("PopUp");
+CJSCore::Init(array("popup"));
 ?>
+    <div id="hideBlock" style="display:none;">
+        <h1>Hello</h1>
+        <p>text</p>
+    </div>
+    <script>
+        window.BXDEBUG = true;
+        BX.ready(function(){
+            var oPopup = new BX.PopupWindow('call_feedback', window.body, {
+                autoHide : true,
+                offsetTop : 1,
+                offsetLeft : 0,
+                lightShadow : true,
+                closeIcon : true,
+                closeByEsc : true,
+                overlay: {
+                    backgroundColor: 'red', opacity: '80'
+                }
+            });
+            oPopup.setContent(BX('hideBlock'));
+            BX.bindDelegate(
+                document.body, 'click', {className: 'css_popup' },
+                BX.proxy(function(e){
+                    if(!e)
+                        e = window.event;
+                    oPopup.show();
+                    return BX.PreventDefault(e);
+                }, oPopup)
+            );
 
 
+        });
+    </script>
+    <div class="css_popup">click Me</div>
 
+    <main>
+        <!-- slider-area -->
+        <section class="slider-area slider-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div tiptext="Это включаемая область Битрикс, можно изменить емаил.">
+                        Hello. I am an inline div2!
+                    </div>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/about-us-area.php"
+                        )
+                    );?> <br>
+                    <br>
+                    <?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "auth-form", Array(
+                        "FORGOT_PASSWORD_URL" => "/user/",	// Страница забытого пароля
+                        "PROFILE_URL" => "/user/profile.php",	// Страница профиля
+                        "REGISTER_URL" => "/user/registration.php",	// Страница регистрации
+                        "SHOW_ERRORS" => "N",	// Показывать ошибки
+                    ),
+                        false
+                    );?><br>
 
-<div id="testdiv" style="padding: 300px;">
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div style="display: flex; flex-wrap: nowrap; flex-direction: row; align-items: center; justify-content: center">
-    <div style='width: 300px; border-radius: 3px; font-size: 20px; margin: 25px; height: 74px; line-height: 74px; text-align: center; text-justify: auto; background-color: #c82333; color: #ffffff; cursor: pointer; font-weight: bold;' id="first">Скрыть</div>
-
-    <div style='width: 300px; border-radius: 3px; font-size: 20px; margin: 25px; height: 74px; line-height: 74px; text-align: center; text-justify: auto; background-color: #47c823; color: #ffffff; font-weight: bold; cursor: pointer;' id="second">Показать</div>
-</div>
-
-    <div id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus architecto at blanditiis debitis fugiat harum minus, nemo omnis quia, quis saepe veniam voluptatem. Consequatur, porro, velit. Ipsam laboriosam, ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus architecto at blanditiis debitis fugiat harum minus, nemo omnis quia, quis saepe veniam voluptatem. Consequatur, porro, velit. Ipsam laboriosam, ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus architecto at blanditiis debitis fugiat harum minus, nemo omnis quia, quis saepe veniam voluptatem. Consequatur, porro, velit. Ipsam laboriosam, ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
-
-</div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

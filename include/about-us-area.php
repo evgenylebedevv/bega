@@ -1,5 +1,5 @@
 <section class="about-us-area pt-90 pb-120">
-    <div class="container">
+    <div tiptext="Это включаемая область Битрикс, можно изменить информацию и изображения." class="container">
         <div class="row">
             <div class="col-lg-6 order-0 order-lg-2">
                 <div class="about-img">

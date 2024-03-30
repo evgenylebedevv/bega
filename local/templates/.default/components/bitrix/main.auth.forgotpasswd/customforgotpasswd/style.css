@@ -1,0 +1,13 @@
+p {
+    color: #ffffff;
+}
+
+div {
+    color: #ffffff;
+}
+
+.bx-authform-content-container, .bx-authform-label-container {
+    font-size: 13px;
+    color: #ffffff;
+    padding-bottom: 2px;
+}

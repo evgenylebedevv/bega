@@ -30,8 +30,10 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     <link rel="stylesheet" href="/local/templates/.default/css/default.css">
     <link rel="stylesheet" href="/local/templates/.default/css/style.css">
     <link rel="stylesheet" href="/local/templates/.default/css/responsive.css">
+    <link rel="stylesheet" href="/local/templates/.default/css/tiptext.css">
 
     <?$APPLICATION->ShowHead();?>
+    <?CJSCore::Init(array("popup")); // Подключение JS библиотеки Битрикс ?>
 </head>
 <body>
 <div id="panel">
@@ -53,9 +55,17 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
         <div class="container-fluid container-full-padding">
             <div class="row align-items-center">
                 <div class="col-lg-6 d-none d-lg-block">
-                    <div class="header-top-offer">
-                        <p>Exclusive Black Friday ! Offer</p>
-                        <span class="coming-time" data-countdown="2024/6/20"></span>
+                    <div tiptext="Это включаемая область Битрикс, можно установить дату истечения предложения." class="header-top-offer">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/header-top-offer.php"
+                        )
+                    );?>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -71,15 +81,35 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                         <div class="header-top-action">
                             <ul>
                                 <li>
-                                    <div class="header-top-mail">
-                                        <p><span>|</span><i class="far fa-envelope"></i><a href="mailto:info@gmail.com">info@gecoinfo.com</a></p>
+                                    <div tiptext="Это включаемая область Битрикс, можно изменить емаил." class="header-top-mail">
+                                        <p><span>|</span>
+                                            <i class="far fa-envelope"></i>
+                                            <?$APPLICATION->IncludeComponent(
+                                                "bitrix:main.include",
+                                                "",
+                                                Array(
+                                                    "AREA_FILE_SHOW" => "file",
+                                                    "AREA_FILE_SUFFIX" => "inc",
+                                                    "EDIT_TEMPLATE" => "",
+                                                    "PATH" => "/include/header-top-mail.php"
+                                                )
+                                            );?>
+                                        </p>
                                     </div>
                                 </li>
+                                <!-- Кнопка авторизации на сайте вызывает попап окно  -->
+
+                                <div class="css_popup" style="cursor: pointer; ">
                                 <li>
                                     <div class="header-user-login">
-                                        <a href="#"><i class="fas fa-user"></i><?=GetMessage("LOGIN"); ?></a>
+                                        <a>
+                                            <i class="fas fa-user">
+                                            </i>
+                                           <?=GetMessage("LOGIN"); ?>
+                                        </a>
                                     </div>
                                 </li>
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +126,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                             <div class="logo">
                                 <a href="/"><img src="/local/templates/.default/img/logo/logo.png" alt="Logo"></a>
                             </div>
-                            <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
+                            <div tiptext="Это компонент меню Битрикс" id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                 <?$APPLICATION->IncludeComponent(
                                     "bitrix:menu",
                                     "top_main_menu",
@@ -175,6 +205,20 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Попап окно авторизации на сайте -->
+    <div id="hideBlock" style="display:none;">
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:system.auth.form",
+            "customauthform",
+            Array(
+                "FORGOT_PASSWORD_URL" => "/user/restorepass.php",
+                "PROFILE_URL" => "/user/profile.php",
+                "REGISTER_URL" => "/user/registration.php",
+                "SHOW_ERRORS" => "N"
+            )
+        );?>
     </div>
 </header>
 <!-- header-area-end -->

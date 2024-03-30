@@ -1,0 +1,16 @@
+.tiptext {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 10px;
+    font: 20px Helvetica;
+    float: left;
+    background-color: #6699cc;
+    color: white;
+    display: block;
+    z-index: 1000;
+}
+
+.tiptext-short_length {
+    max-width: 15em;
+}

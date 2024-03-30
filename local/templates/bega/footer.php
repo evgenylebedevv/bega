@@ -49,23 +49,32 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
                 <div class="col-xl-2 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-50">
                         <div class="fw-title mb-35">
-                            <h5>Products</h5>
+                            <h5><?=GetMessage("PRODUCTS");?></h5>
                         </div>
-                        <div class="fw-link">
-                            <ul>
-                                <li><a href="#">Graphics (26)</a></li>
-                                <li><a href="#">Backgrounds (11)</a></li>
-                                <li><a href="#">Fonts (9)</a></li>
-                                <li><a href="#">Music (3)</a></li>
-                                <li><a href="#">Photography (3)</a></li>
-                            </ul>
+                        <div tiptext="Это компонент меню Битрикс" class="fw-link">
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:menu",
+                                "vertical_onelevel_bottom",
+                                Array(
+                                    "ALLOW_MULTI_SELECT" => "N",
+                                    "CHILD_MENU_TYPE" => "left",
+                                    "DELAY" => "N",
+                                    "MAX_LEVEL" => "1",
+                                    "MENU_CACHE_GET_VARS" => array(""),
+                                    "MENU_CACHE_TIME" => "3600",
+                                    "MENU_CACHE_TYPE" => "N",
+                                    "MENU_CACHE_USE_GROUPS" => "Y",
+                                    "ROOT_MENU_TYPE" => "bottom",
+                                    "USE_EXT" => "N"
+                                )
+                            );?>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-sm-6">
                     <div class="footer-widget mb-50">
                         <div class="fw-title mb-35">
-                            <h5>Need Help?</h5>
+                            <h5><?=GetMessage('NEED_HELP');?></h5>
                         </div>
                         <div class="fw-link">
                             <ul>
@@ -152,5 +161,8 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 <script src="/local/templates/.default/js/main.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="/local/templates/.default/js/fader.js"></script>
+<script src="/local/templates/.default/js/tiptext-1.0.js"></script>
+<script src="/local/templates/.default/js/popup.window.authorization.js"></script>
+
 </body>
 </html>
