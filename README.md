@@ -1,1 +1,1 @@
-Integrate template bega to bitrix on domain bega.siteprovider.ru
+Integrate emplate bitrix on domain bega.siteprovider.ru

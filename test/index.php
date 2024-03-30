@@ -3,6 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("PopUp");
 CJSCore::Init(array("popup"));
 ?>
+
     <div id="hideBlock" style="display:none;">
         <h1>Hello</h1>
         <p>text</p>
